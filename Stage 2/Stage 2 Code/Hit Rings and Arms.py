@@ -3,14 +3,14 @@ import json
 import pandas as pd
 
 # Your Excel file path
-excel_file_path = r'C:\Users\aseel\OneDrive - The Pennsylvania State University\Desktop\Laparoscopic data\E1 B validation\E1 B.xlsx'
+excel_file_path = r'Fixation_Adult.xlsx'
 
 # Read fixation data from Excel
 fixation_data = pd.read_excel(excel_file_path)
 
 # Your JSON data with multiple sets of points
 with open(
-        r'C:\Users\aseel\OneDrive - The Pennsylvania State University\Desktop\Laparoscopic data\E1 B validation\result E1 B.json',
+        r'result Adult.json',
         'r') as file:
     json_data = json.load(file)
 
@@ -54,4 +54,4 @@ for image in json_data:
 fixation_counts_df = pd.DataFrame(fixation_counts)
 
 # Save the counts to an Excel file
-fixation_counts_df.to_excel('Excel.xlsx', index=False)
+fixation_counts_df.to_excel('Mask R-CNN Hit.xlsx', index=False)
