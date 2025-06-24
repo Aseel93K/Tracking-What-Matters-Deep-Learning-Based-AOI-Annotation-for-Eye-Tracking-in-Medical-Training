@@ -11,7 +11,7 @@ In this stage, we validate the model’s results by comparing detected fixations
 -   In our case, **epoch 49** is used.
     
 -   Refer to the processing script in:  
-    **`Stage 1/Analysis.py`**
+    **`Stage 1/analysis.py`**
     
 
 ### Step 2: AOI Detection
