@@ -1,0 +1,4 @@
+imantics
+openmim
+mmengine
+mmdet>=3.0.0
